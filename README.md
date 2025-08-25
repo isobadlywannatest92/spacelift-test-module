@@ -9,3 +9,11 @@ module "namegen" {
   version = "0.1.0"
   prefix  = "play"
 }
+
+
+**Tag a version** (so consumers can pin):
+```bash
+git add .
+git commit -m "feat: initial module"
+git tag v0.1.0
+git push --follow-tags
